@@ -1,0 +1,15 @@
+@import '../../../assets/styles/app.scss';
+
+.btn {
+	border: none;
+	border-radius: 5px;
+	font-weight: normal;
+	color: $white;
+  padding: .8em 1em;
+  cursor: pointer;
+
+  &.btn--blue {
+    background: $blue;
+  }
+
+}

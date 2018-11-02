@@ -1,0 +1,6 @@
+export const SET_ORIGIN = 'SET_ORIGIN';
+export const SET_DESTINATION = 'SET_DESTINATION';
+export const SET_DISTANCE = 'SET_DISTANCE';
+export const SET_VEHICLETYPE = 'SET_VEHICLETYPE';
+export const SET_QUOTE = 'SET_QUOTE';
+export const SET_VEHICLETYPES = 'SET_VEHICLETYPES';

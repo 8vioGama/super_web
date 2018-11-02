@@ -1,0 +1,21 @@
+.header {
+  position: absolute;
+  width: 98%;
+  background: #fff;;
+  z-index: 2;
+  margin: 10px;
+  nav {
+    ul {
+      min-height: 3em;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        margin-right: 1em;
+        text-decoration: none;
+      }
+    }
+  }
+}

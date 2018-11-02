@@ -1,0 +1,383 @@
+.section {
+  padding: 4em 0;
+}
+
+.section--hero {
+    min-height: 800px;
+    background: url('../../../assets/images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 0;
+    box-sizing: border-box;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.section--hero:before {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.hero__content {
+  margin: auto;
+}
+
+.form--booking {
+  background: #fff;
+  padding: 1.5em 2em;
+  border-radius: 5px;
+  max-height: 175px;
+  margin: auto;
+  width: 100%;
+  transition: all .3s ease-in-out;
+  box-sizing: border-box;
+
+  &.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  p {
+    color: #8a8a8a;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .input-group {
+
+    .icon--marker {
+      width: 17px;
+      height: 17px  ;
+      display: block;
+      background: url('../../../assets/images/map-marker.png') no-repeat;
+      background-size: contain;
+      position: absolute;
+    }
+  }
+
+  label {
+    color: #9F9F9F;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    display: block;
+    margin-bottom: .5em;
+  }
+
+  input {
+    font-size: 16px;
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ececec;
+    outline: none;
+    transition: all .3s ease;
+
+    &:focus {
+      border-color: #00A1F1; 
+    }
+  }
+
+  .input--address {
+    input {
+      padding-left: 1.1em;
+    }
+  }
+
+  .button-group button {
+    background: #04aaf3;
+    color: #fff;
+    padding: 1em 1.5em;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 200px;
+    transition: all .3s ease;
+
+    &:hover {
+      background: #0590ce;
+    }
+  }
+}
+
+
+.section--alt {
+  background: #f7f7f7;
+}
+
+.img-container {
+  position: absolute;
+  left: -18em;
+}
+
+.autocomplete-dropdown-container {
+  position: absolute;
+  color: #000;
+  background: #f6f6f6;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.22) 0 5px 25px;
+  z-index: 99;
+
+  .suggestion-item, .suggestion-item--active {
+    padding: .5em 1em;
+
+    &:hover {
+      background: #ebebeb;
+    }
+  }
+
+  .poweredBygoogle {
+    margin: .5em 1em .7em;
+    float: right;
+  }
+}
+
+.dropdown--vehicles {
+  .suggestion-item {
+    span {
+      padding-left: 5em;
+      position: relative;
+    }
+  
+    img {
+      height: 25px;
+      position: absolute;
+      left: 0px;
+    }
+  } 
+}
+
+
+
+// To replace
+.col-one-half {
+  width: 50%;
+}
+
+.col-one-fifth {
+  width: 20%;
+}
+
+.col-two-fifths {
+  width: 40%;
+}
+
+.col-three-eights {
+  width: 37.5%;
+}
+
+.col-one-fourth, .col-two-eights {
+  width: 25%;
+}
+
+.col-three-tenths {
+  width: 30%;
+}
+
+
+// How section
+
+.box--how {
+  min-height: 8em;
+
+
+  .box--how__overlay {
+    width: 100%;
+    height: 8em;
+    position: absolute;
+  }
+}
+
+// Price section
+
+.section--price {
+  margin: 20px;
+
+  .price__left {
+    padding-right: 10px;
+
+    .price__left__content {
+      max-width: 80%;
+
+      h2 {
+        padding: 0em 0em .5em;
+      }
+
+      p {
+        max-width: 80%;
+      }
+    }
+  }
+
+  .price__right {
+    padding-left: 10px;
+
+    .price--image {
+    }
+  }
+}
+
+// Testimonials
+
+.section--testimonials {
+  padding-bottom: 4em;
+  overflow: hidden;
+  h2 {
+    padding-bottom: 1em;
+  }
+  .testimonial__bottom {
+    margin: 0px -15em;
+    
+    .col-4 {
+      flex: 0 0 23%;
+      max-width: 23%;
+    }
+  }
+}
+
+
+.step {
+  transition: all .3s ease;
+  transform: translate(0);
+  opacity: 1;
+  
+  &.step--1 {
+    &.hidden {
+      transform: translate(-120%);
+      opacity: 0;
+    }
+  }
+
+  &.step--2 {
+    &.hidden {
+      transform: translate(120%, -97%);
+      opacity: 0;
+    }
+    &.visible {
+      transform: translate(0, -97%);
+      opacity: 1;;
+    }
+  }
+}
+
+.price--image {
+  overflow: hidden;
+
+  img {
+    height: 500px;
+    width: auto;
+    max-width: initial;
+  }
+} 
+@media screen and (max-width: 600px) {
+
+  .section--hero {
+    min-height: auto;
+    padding: 8em 0 2em;
+  }
+
+  .hero__content {
+    width: 100%;
+
+    .title--lg {
+      font-size: 30px;
+    }
+
+    .d-flex {
+      display: block;
+    }
+
+    .form--booking {
+      max-height: 480px;
+
+      p {
+        font-size: 12px;
+      }
+
+      .button-group button {
+        width: 100%;
+      }
+    }
+
+    .input-group {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+
+  .step.step--2.visible {
+    transform: translate(0, -88%);
+  }
+  .img-container {
+    position: relative;
+    left: 0;
+  }
+
+  .wrapper .row {
+    display: block;
+    .col-6 {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+  }
+
+  .box--how__number.col-2 {
+    float: left;
+  }
+
+  .text-sm {
+    font-size: 18px;
+  }
+
+  .section--price {
+    .price__left .price__left__content {
+      max-width: 100%;
+    }
+
+    .col-6 {
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      flex: 100%;
+    }
+  }
+
+  .bg-grey__alt {
+    padding: 1em;
+  }
+
+  .col-4 {
+    flex: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .testimonial__image.col-2 {
+    float: left;
+    margin-right: 1em;
+  }
+  .testimonial__container .testimonial__card .testimonial__text {
+    max-width: 100%;
+  }
+
+  .price--image {  
+    img {
+      height: 300px;
+    }
+  } 
+}

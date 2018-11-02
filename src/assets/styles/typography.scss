@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+
+.title--lg {
+  max-width: 900px;
+  font-size: 60px;
+  line-height: 1;
+  margin: 1em auto;
+}
+
+.title--md {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.text--centered {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text-sm {
+  font-size: 20px;
+}
+
+.text-md {
+  font-size: 30px;
+}
+
+.text-lg {
+  font-size: 48px;
+}
+
+.color--blue {
+  color: $blue;
+}
+
+.color--white {
+  color: $white;
+}
+
+.color--black-text {
+  color: $black--text;
+}
